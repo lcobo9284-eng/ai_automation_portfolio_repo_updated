@@ -1,0 +1,735 @@
+[
+  {
+    "workflow_name": "Murphy",
+    "source_file": "Murphy.json",
+    "node_count": 40,
+    "main_node_types": {
+      "@n8n/n8n-nodes-langchain.toolWorkflow": 9,
+      "n8n-nodes-base.set": 4,
+      "n8n-nodes-base.telegram": 3,
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi": 2,
+      "n8n-nodes-base.whatsApp": 2,
+      "n8n-nodes-base.httpRequest": 2,
+      "@n8n/n8n-nodes-langchain.embeddingsOpenAi": 2,
+      "@n8n/n8n-nodes-langchain.vectorStoreSupabase": 2,
+      "n8n-nodes-base.switch": 2,
+      "n8n-nodes-base.splitOut": 1
+    },
+    "credential_or_secret_markers_found": [
+      "api_",
+      "phoneNumberId",
+      "webhookId"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "OpenAI Chat Model",
+      "OpenAI Chat Model1",
+      "Reply To User",
+      "Get Audio URL",
+      "Download Audio",
+      "Google Gemini Audio",
+      "Format Response1",
+      "Split Out Message Parts",
+      "Get User's Message",
+      "Get Text",
+      "Vector Store Tool",
+      "Recursive Character Text Splitter2",
+      "Google Drive2",
+      "Default Data Loader2",
+      "Embeddings OpenAI"
+    ]
+  },
+  {
+    "workflow_name": "Murphy - LinkedIn System: Trigger webhook Buster Agent",
+    "source_file": "Murphy - LinkedIn System_ Trigger webhook Buster Agent.json",
+    "node_count": 9,
+    "main_node_types": {
+      "@n8n/n8n-nodes-langchain.toolWorkflow": 4,
+      "n8n-nodes-base.webhook": 1,
+      "@n8n/n8n-nodes-langchain.agent": 1,
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi": 1,
+      "@n8n/n8n-nodes-langchain.memoryBufferWindow": 1,
+      "n8n-nodes-base.if": 1
+    },
+    "credential_or_secret_markers_found": [
+      "webhookId"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "Webhook",
+      "AI Agent",
+      "OpenAI Chat Model",
+      "Simple Memory",
+      "Create document",
+      "Message 2",
+      "Message 3",
+      "Message 4",
+      "If"
+    ]
+  },
+  {
+    "workflow_name": "Murphy - LinkedIn System: Trigger PhantomBuster Agent",
+    "source_file": "Murphy - LinkedIn System_ Trigger PhantomBuster Agent.json",
+    "node_count": 17,
+    "main_node_types": {
+      "@n8n/n8n-nodes-langchain.toolWorkflow": 5,
+      "n8n-nodes-base.httpRequest": 2,
+      "n8n-nodes-base.executeWorkflowTrigger": 1,
+      "@n8n/n8n-nodes-langchain.openAi": 1,
+      "n8n-nodes-base.aggregate": 1,
+      "@n8n/n8n-nodes-langchain.agent": 1,
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi": 1,
+      "@n8n/n8n-nodes-langchain.memoryBufferWindow": 1,
+      "n8n-nodes-base.set": 1,
+      "n8n-nodes-base.wait": 1
+    },
+    "credential_or_secret_markers_found": [
+      "Authorization",
+      "Bearer ",
+      "X-Phantombuster-Key",
+      "api_",
+      "token",
+      "webhookId"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "When Executed by Another Workflow",
+      "Run Apollo Apify Actor and get Results",
+      "Generate Search URL",
+      "Trigger PhantomBuster Agent",
+      "Aggregate",
+      "AI Agent",
+      "OpenAI Chat Model1",
+      "Simple Memory",
+      "Create document",
+      "Edit Fields",
+      "Message 1",
+      "Message 2",
+      "Message 3",
+      "Message 4",
+      "Wait"
+    ]
+  },
+  {
+    "workflow_name": "Murphy - LinkedIn System - Message 2",
+    "source_file": "Murphy - LinkedIn System - Message 2.json",
+    "node_count": 4,
+    "main_node_types": {
+      "n8n-nodes-base.googleSheets": 2,
+      "n8n-nodes-base.executeWorkflowTrigger": 1,
+      "@n8n/n8n-nodes-langchain.openAi": 1
+    },
+    "credential_or_secret_markers_found": [],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "When Executed by Another Workflow",
+      "OpenAI",
+      "Google Sheets",
+      "Google Sheets1"
+    ]
+  },
+  {
+    "workflow_name": "Murphy - LinkedIn System - Message 1",
+    "source_file": "Murphy - LinkedIn System - Message 1.json",
+    "node_count": 3,
+    "main_node_types": {
+      "n8n-nodes-base.executeWorkflowTrigger": 1,
+      "@n8n/n8n-nodes-langchain.openAi": 1,
+      "n8n-nodes-base.googleSheets": 1
+    },
+    "credential_or_secret_markers_found": [],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "When Executed by Another Workflow",
+      "OpenAI",
+      "Google Sheets"
+    ]
+  },
+  {
+    "workflow_name": "Murphy - LinkedIn System - AI Report",
+    "source_file": "Murphy - LinkedIn System - AI Report.json",
+    "node_count": 12,
+    "main_node_types": {
+      "@n8n/n8n-nodes-langchain.mcpClientTool": 2,
+      "n8n-nodes-base.httpRequest": 2,
+      "n8n-nodes-base.executeWorkflowTrigger": 1,
+      "n8n-nodes-base.googleSheets": 1,
+      "@n8n/n8n-nodes-langchain.toolHttpRequest": 1,
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi": 1,
+      "@n8n/n8n-nodes-langchain.memoryBufferWindow": 1,
+      "@n8n/n8n-nodes-langchain.outputParserStructured": 1,
+      "@n8n/n8n-nodes-langchain.toolThink": 1,
+      "@n8n/n8n-nodes-langchain.agent": 1
+    },
+    "credential_or_secret_markers_found": [
+      "Authorization",
+      "Bearer "
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "When Executed by Another Workflow",
+      "Linkedin Leads",
+      "MCP Client",
+      "MCP Client1",
+      "Website1",
+      "OpenAI Chat Model1",
+      "Window Buffer Memory1",
+      "Structured Output Parser1",
+      "Think1",
+      "Make.com document1",
+      "Make.com document",
+      "AI Market Readiness Report"
+    ]
+  },
+  {
+    "workflow_name": "Murphy - Get access token",
+    "source_file": "Murphy - Get access token.json",
+    "node_count": 3,
+    "main_node_types": {
+      "n8n-nodes-base.set": 1,
+      "n8n-nodes-base.httpRequest": 1,
+      "n8n-nodes-base.executeWorkflowTrigger": 1
+    },
+    "credential_or_secret_markers_found": [
+      "client_secret",
+      "secret",
+      "token"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "Edit Fields",
+      "Access token",
+      "When Executed by Another Workflow"
+    ]
+  },
+  {
+    "workflow_name": "Murphy - Delete events",
+    "source_file": "Murphy - Delete events.json",
+    "node_count": 6,
+    "main_node_types": {
+      "n8n-nodes-base.executeWorkflowTrigger": 1,
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi": 1,
+      "@n8n/n8n-nodes-langchain.outputParserStructured": 1,
+      "@n8n/n8n-nodes-langchain.toolHttpRequest": 1,
+      "n8n-nodes-base.httpRequest": 1,
+      "@n8n/n8n-nodes-langchain.agent": 1
+    },
+    "credential_or_secret_markers_found": [
+      "Authorization",
+      "Bearer ",
+      "token"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "When Executed by Another Workflow",
+      "OpenAI Chat Model",
+      "Structured Output Parser",
+      "Get event id",
+      "HTTP Request",
+      "Delete Events"
+    ]
+  },
+  {
+    "workflow_name": "Murphy - Create Event with Attendees",
+    "source_file": "Murphy - Create Event with Attendees.json",
+    "node_count": 6,
+    "main_node_types": {
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi": 1,
+      "@n8n/n8n-nodes-langchain.outputParserStructured": 1,
+      "n8n-nodes-base.executeWorkflowTrigger": 1,
+      "@n8n/n8n-nodes-langchain.agent": 1,
+      "n8n-nodes-base.httpRequest": 1,
+      "n8n-nodes-base.zoomTool": 1
+    },
+    "credential_or_secret_markers_found": [
+      "Authorization",
+      "Bearer ",
+      "password",
+      "token"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "OpenAI Chat Model",
+      "Structured Output Parser",
+      "When Executed by Another Workflow",
+      "Microsoft create meeting",
+      "Rudy Calendar",
+      "Create a meeting in Zoom"
+    ]
+  },
+  {
+    "workflow_name": "Murphy - Calendar Agent",
+    "source_file": "Murphy - Calendar Agent.json",
+    "node_count": 17,
+    "main_node_types": {
+      "@n8n/n8n-nodes-langchain.toolWorkflow": 5,
+      "n8n-nodes-base.microsoftOutlookTool": 3,
+      "n8n-nodes-base.set": 2,
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi": 1,
+      "@n8n/n8n-nodes-langchain.agent": 1,
+      "@n8n/n8n-nodes-langchain.memoryBufferWindow": 1,
+      "n8n-nodes-base.executeWorkflowTrigger": 1,
+      "n8n-nodes-base.googleSheetsTool": 1,
+      "n8n-nodes-base.httpRequest": 1,
+      "@n8n/n8n-nodes-langchain.toolThink": 1
+    },
+    "credential_or_secret_markers_found": [
+      "client_secret",
+      "secret",
+      "token",
+      "webhookId"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "OpenAI Chat Model",
+      "Try Again",
+      "Success",
+      "Calendar Agent",
+      "Get access token",
+      "Get Events1",
+      "Create Event1",
+      "Update Event1",
+      "Create Event with attendee1",
+      "Get Events2",
+      "Simple Memory",
+      "Delete Event2",
+      "Update Event2",
+      "When Executed by Another Workflow",
+      "Contacts Data"
+    ]
+  },
+  {
+    "workflow_name": "Sostenes - Add Dropbox video to Pinecone",
+    "source_file": "Sostenes - Add Dropbox video to Pinecone.json",
+    "node_count": 29,
+    "main_node_types": {
+      "n8n-nodes-base.httpRequest": 4,
+      "n8n-nodes-base.dropboxTool": 4,
+      "n8n-nodes-base.code": 3,
+      "n8n-nodes-base.set": 2,
+      "n8n-nodes-base.executeWorkflowTrigger": 1,
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi": 1,
+      "@n8n/n8n-nodes-langchain.memoryBufferWindow": 1,
+      "@n8n/n8n-nodes-langchain.outputParserStructured": 1,
+      "n8n-nodes-base.wait": 1,
+      "n8n-nodes-base.convertToFile": 1
+    },
+    "credential_or_secret_markers_found": [
+      "Authorization",
+      "Bearer ",
+      "client_secret",
+      "secret",
+      "token",
+      "webhookId"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "When Executed by Another Workflow",
+      "OpenAI Chat Model",
+      "Simple Memory",
+      "Structured Output Parser",
+      "Dropbox URL",
+      "Assembly create id",
+      "Assembly get text",
+      "Wait",
+      "Edit Fields",
+      "Edit Fields1",
+      "Convert to File",
+      "Pinecone Vector Store",
+      "Recursive Character Text Splitter",
+      "Default Data Loader1",
+      "Embeddings OpenAI1"
+    ]
+  },
+  {
+    "workflow_name": "Aquilla - Add documents to Pinecone",
+    "source_file": "Aquilla - Add documents to Pinecone.json",
+    "node_count": 24,
+    "main_node_types": {
+      "n8n-nodes-base.dropbox": 3,
+      "n8n-nodes-base.code": 3,
+      "n8n-nodes-base.dropboxTool": 2,
+      "n8n-nodes-base.executeWorkflowTrigger": 1,
+      "@n8n/n8n-nodes-langchain.vectorStorePinecone": 1,
+      "@n8n/n8n-nodes-langchain.documentDefaultDataLoader": 1,
+      "@n8n/n8n-nodes-langchain.textSplitterRecursiveCharacterTextSplitter": 1,
+      "@n8n/n8n-nodes-langchain.embeddingsOpenAi": 1,
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi": 1,
+      "@n8n/n8n-nodes-langchain.memoryBufferWindow": 1
+    },
+    "credential_or_secret_markers_found": [
+      "token",
+      "webhookId"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "When Executed by Another Workflow",
+      "Pinecone Vector Store",
+      "Default Data Loader",
+      "Recursive Character Text Splitter",
+      "Embeddings OpenAI",
+      "Dropbox2",
+      "OpenAI Chat Model1",
+      "Simple Memory1",
+      "Structured Output Parser1",
+      "Code",
+      "If",
+      "Dropbox",
+      "Extract from DOCS",
+      "Loop Over Items",
+      "Aquilla"
+    ]
+  },
+  {
+    "workflow_name": "Call Paul-Update automatic",
+    "source_file": "Call Paul-Update automatic.json",
+    "node_count": 11,
+    "main_node_types": {
+      "@n8n/n8n-nodes-langchain.toolWorkflow": 4,
+      "n8n-nodes-base.scheduleTrigger": 1,
+      "n8n-nodes-base.dropbox": 1,
+      "n8n-nodes-base.if": 1,
+      "@n8n/n8n-nodes-langchain.agent": 1,
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi": 1,
+      "@n8n/n8n-nodes-langchain.memoryBufferWindow": 1,
+      "n8n-nodes-base.set": 1
+    },
+    "credential_or_secret_markers_found": [],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "Schedule Trigger",
+      "Sosthenes (Add Dropbox video to Pinecone)",
+      "Aquilla (Add documents to Pinecone)",
+      "Dropbox1",
+      "If",
+      "AI Agent",
+      "Add document to Airtable",
+      "Add dropbox video to Airtable",
+      "OpenAI Chat Model",
+      "Simple Memory",
+      "Edit Fields"
+    ]
+  },
+  {
+    "workflow_name": "Call Paul - Professor Voice",
+    "source_file": "Call Paul - Professor Voice.json",
+    "node_count": 37,
+    "main_node_types": {
+      "n8n-nodes-base.set": 8,
+      "n8n-nodes-base.telegram": 4,
+      "@n8n/n8n-nodes-langchain.embeddingsOpenAi": 4,
+      "@n8n/n8n-nodes-langchain.vectorStorePinecone": 4,
+      "n8n-nodes-base.code": 3,
+      "n8n-nodes-base.slack": 2,
+      "n8n-nodes-base.googleSheets": 2,
+      "n8n-nodes-base.switch": 1,
+      "@n8n/n8n-nodes-langchain.openAi": 1,
+      "@n8n/n8n-nodes-langchain.agent": 1
+    },
+    "credential_or_secret_markers_found": [
+      "token",
+      "webhookId"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "Send typing action",
+      "Dowland message voice",
+      "Determine cotent type",
+      "Telegram",
+      "convert audio to text",
+      "Get User's Message",
+      "Paul",
+      "Simple Memory1",
+      "Embeddings OpenAI",
+      "Think Paul",
+      "Embeddings OpenAI1",
+      "Embeddings OpenAI2",
+      "Embeddings OpenAI3",
+      "Pinecone Folder 1 - 2",
+      "Airtable folder 1 - 2"
+    ]
+  },
+  {
+    "workflow_name": "AI Opportunity Audit- Lakeside Growth",
+    "source_file": "AI Opportunity Audit- Lakeside Growth.json",
+    "node_count": 36,
+    "main_node_types": {
+      "n8n-nodes-base.googleSheets": 16,
+      "@n8n/n8n-nodes-langchain.openAi": 3,
+      "n8n-nodes-base.if": 2,
+      "n8n-nodes-base.httpRequest": 2,
+      "n8n-nodes-base.slack": 2,
+      "n8n-nodes-base.htmlExtract": 1,
+      "@n8n/n8n-nodes-langchain.agent": 1,
+      "@n8n/n8n-nodes-langchain.toolHttpRequest": 1,
+      "@n8n/n8n-nodes-langchain.lmChatAnthropic": 1,
+      "n8n-nodes-base.set": 1
+    },
+    "credential_or_secret_markers_found": [
+      "Authorization",
+      "Bearer ",
+      "webhookId"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "If",
+      "Fetch Website Content",
+      "Extract HTML Data",
+      "AI Research Agent",
+      "Website1",
+      "Message a model",
+      "Make.com document",
+      "Anthropic Chat Model",
+      "Message a model1",
+      "Edit Fields1",
+      "Code1",
+      "OpenAI Chat Model",
+      "If1",
+      "Incorrect url message",
+      "Update \"URL Needed\""
+    ]
+  },
+  {
+    "workflow_name": "Competitive Edge Blueprint - Lakeside Growth",
+    "source_file": "Competitive Edge Blueprint - Lakeside Growth.json",
+    "node_count": 39,
+    "main_node_types": {
+      "n8n-nodes-base.googleSheets": 15,
+      "@n8n/n8n-nodes-langchain.openAi": 5,
+      "n8n-nodes-base.httpRequest": 2,
+      "n8n-nodes-base.code": 2,
+      "n8n-nodes-base.if": 2,
+      "n8n-nodes-base.slack": 2,
+      "@n8n/n8n-nodes-langchain.agent": 1,
+      "n8n-nodes-base.wait": 1,
+      "@n8n/n8n-nodes-langchain.toolHttpRequest": 1,
+      "@n8n/n8n-nodes-langchain.lmChatAnthropic": 1
+    },
+    "credential_or_secret_markers_found": [
+      "Authorization",
+      "Bearer ",
+      "token",
+      "webhookId"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "Make.com document1",
+      "AI Research Agent",
+      "Code",
+      "Wait",
+      "Website1",
+      "Anthropic Chat Model1",
+      "OpenAI Chat Model1",
+      "If",
+      "If1",
+      "Update \"URL Needed\"",
+      "Analyze URL",
+      "Update \"In Progress\"",
+      "Fetch Website Content",
+      "Incorrect url message",
+      "Extract HTML Data"
+    ]
+  },
+  {
+    "workflow_name": "Competitive Edge Blueprint - Kerri",
+    "source_file": "Competitive Edge Blueprint - Kerri.json",
+    "node_count": 35,
+    "main_node_types": {
+      "@n8n/n8n-nodes-langchain.openAi": 5,
+      "n8n-nodes-base.if": 4,
+      "n8n-nodes-base.code": 4,
+      "n8n-nodes-base.set": 4,
+      "n8n-nodes-base.slack": 4,
+      "n8n-nodes-base.httpRequest": 3,
+      "n8n-nodes-base.wait": 2,
+      "n8n-nodes-base.htmlExtract": 1,
+      "n8n-nodes-base.splitInBatches": 1,
+      "n8n-nodes-base.formTrigger": 1
+    },
+    "credential_or_secret_markers_found": [
+      "api_",
+      "token",
+      "webhookId"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "Fetch Website Content",
+      "Extract HTML Data",
+      "Make.com document",
+      "If",
+      "Loop Over Items",
+      "Wait",
+      "Code1",
+      "Edit Fields1",
+      "Edit Fields2",
+      "Send a message1",
+      "Send a message3",
+      "Form Trigger",
+      "Document Report",
+      "Document Report2",
+      "Quality control agent"
+    ]
+  },
+  {
+    "workflow_name": "Brand Positioning Audit & GTM Blueprint",
+    "source_file": "Brand Positioning Audit & GTM Blueprint.json",
+    "node_count": 57,
+    "main_node_types": {
+      "n8n-nodes-base.set": 9,
+      "n8n-nodes-base.code": 9,
+      "n8n-nodes-base.httpRequest": 8,
+      "@n8n/n8n-nodes-langchain.agent": 7,
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi": 6,
+      "@n8n/n8n-nodes-langchain.openAi": 2,
+      "n8n-nodes-base.gmail": 2,
+      "n8n-nodes-base.if": 2,
+      "n8n-nodes-base.htmlExtract": 1,
+      "@n8n/n8n-nodes-langchain.lmChatAnthropic": 1
+    },
+    "credential_or_secret_markers_found": [
+      "Authorization",
+      "Bearer ",
+      "api_",
+      "token",
+      "webhookId"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "Fetch Website Content",
+      "Extract HTML Data",
+      "AI Research Agent",
+      "Make.com document",
+      "Anthropic Chat Model",
+      "Edit Fields",
+      "Presentation",
+      "Loop Over Items2",
+      "Switch",
+      "Instagram scraper",
+      "Facebook scraper",
+      "OpenAI Chat Model",
+      "OpenAI Chat Model1",
+      "Instagram analysis",
+      "Facebook analysis"
+    ]
+  },
+  {
+    "workflow_name": "AI Opportunity Audit",
+    "source_file": "AI Opportunity Audit.json",
+    "node_count": 25,
+    "main_node_types": {
+      "n8n-nodes-base.set": 4,
+      "n8n-nodes-base.httpRequest": 3,
+      "n8n-nodes-base.code": 3,
+      "@n8n/n8n-nodes-langchain.openAi": 2,
+      "n8n-nodes-base.if": 2,
+      "n8n-nodes-base.slack": 2,
+      "n8n-nodes-base.formTrigger": 1,
+      "n8n-nodes-base.htmlExtract": 1,
+      "@n8n/n8n-nodes-langchain.agent": 1,
+      "@n8n/n8n-nodes-langchain.lmChatAnthropic": 1
+    },
+    "credential_or_secret_markers_found": [
+      "api_",
+      "token",
+      "webhookId"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "Form Trigger",
+      "Fetch Website Content",
+      "Extract HTML Data",
+      "AI Research Agent",
+      "Message a model",
+      "Make.com document",
+      "Anthropic Chat Model",
+      "If",
+      "Loop Over Items",
+      "Wait",
+      "Code1",
+      "Edit Fields1",
+      "Edit Fields2",
+      "Send a message1",
+      "Send a message3"
+    ]
+  },
+  {
+    "workflow_name": "ScripCast - SEOM - Post video",
+    "source_file": "ScripCast - SEOM - Post video (1).json",
+    "node_count": 36,
+    "main_node_types": {
+      "n8n-nodes-base.httpRequest": 17,
+      "n8n-nodes-base.set": 6,
+      "n8n-nodes-base.googleSheets": 5,
+      "n8n-nodes-base.stickyNote": 2,
+      "n8n-nodes-base.switch": 2,
+      "n8n-nodes-base.wait": 1,
+      "n8n-nodes-base.if": 1,
+      "@n8n/n8n-nodes-langchain.openAi": 1,
+      "n8n-nodes-base.googleSheetsTrigger": 1
+    },
+    "credential_or_secret_markers_found": [
+      "api_key",
+      "webhookId",
+      "X-Api-Key",
+      "blotato-api-key",
+      "credentials",
+      "cachedResultUrl"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "Upload to Blotato",
+      "Wait",
+      "Setup Heygen",
+      "Get Avatar Video",
+      "Prepare for Publish",
+      "Create Avatar Video",
+      "Sticky Note1",
+      "Sticky Note2",
+      "If",
+      "[Tiktok] Publish via Blotato",
+      "[Instagram] Publish via Blotato",
+      "[Facebook] Publish via Blotato",
+      "[Linkedin] Publish via Blotato",
+      "OpenAI",
+      "Upload to Blotato - Image"
+    ]
+  },
+  {
+    "workflow_name": "ScripCast - SEOM - Make monologue",
+    "source_file": "ScripCast - SEOM - Make monologue (1).json",
+    "node_count": 12,
+    "main_node_types": {
+      "@n8n/n8n-nodes-langchain.openAi": 2,
+      "n8n-nodes-base.googleSheets": 2,
+      "n8n-nodes-base.hackerNewsTool": 2,
+      "@n8n/n8n-nodes-langchain.agent": 1,
+      "@n8n/n8n-nodes-langchain.lmChatOpenAi": 1,
+      "n8n-nodes-base.code": 1,
+      "n8n-nodes-base.set": 1,
+      "n8n-nodes-base.httpRequest": 1,
+      "n8n-nodes-base.formTrigger": 1
+    },
+    "credential_or_secret_markers_found": [
+      "api_key",
+      "webhookId",
+      "X-Api-Key",
+      "credentials",
+      "cachedResultUrl"
+    ],
+    "recommended_github_status": "Do not upload raw file. Use only anonymized documentation or a recreated demo.",
+    "sample_node_names": [
+      "AI Agent",
+      "Write Script",
+      "Write Long Caption",
+      "Write Short Caption",
+      "Get rows",
+      "Code",
+      "Setup Heygen",
+      "Create Avatar Video",
+      "On form submission",
+      "Fetch HN Front Page",
+      "Fetch HN Article",
+      "Create row"
+    ]
+  }
+]
