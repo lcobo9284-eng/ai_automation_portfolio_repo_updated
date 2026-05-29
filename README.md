@@ -138,5 +138,5 @@ This portfolio reflects my ability to combine engineering thinking, practical au
 
 Laura Cobo  
 Environmental Engineer and AI Automation Specialist  
-LinkedIn: Add LinkedIn URL  
-Email: Add email address
+LinkedIn: https://www.linkedin.com/in/laura-marcela-cobo-corrales-362997289/ 
+Email: lcobo9284@gmail.com
