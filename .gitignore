@@ -1,0 +1,13 @@
+.env
+*.env
+secrets.json
+credentials.json
+tokens.json
+*.key
+*.pem
+raw_workflows/
+private_data/
+client_data/
+*.log
+.DS_Store
+__pycache__/
